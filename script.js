@@ -1,10 +1,6 @@
 const API_KEY = "fe29bcfb36b23e99274cb92f";
 const BASE_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}`;
 
-document.getElementById("countries-list-btn").addEventListener("click", () =>{
-    console.log("handle click event")
-})
-
 fetch(`${BASE_URL}/codes`).then((response) => {
     console.log(response);
     return response.json();
